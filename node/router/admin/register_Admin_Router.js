@@ -2,7 +2,8 @@
 // register_Admin_Router.js
 
 const express = require('express');
-const { register_Admin_Controller } = require('../controller/register_Admin_Controller');
+const { register_Admin_Controller } = require('../../controller/admin/register_Admin_Controller');
+
 
 const register_Admin_Router = express.Router();
 

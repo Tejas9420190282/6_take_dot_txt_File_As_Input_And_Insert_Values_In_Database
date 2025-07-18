@@ -2,7 +2,9 @@
 const express = require('express');
 const colors = require('colors');
 const { connectDB } = require('./config/db');
-const { register_Admin_Router } = require('./router/register_Admin_Router');
+const { register_Admin_Router } = require('./router/admin/register_Admin_Router');
+const { register_teacher_Router } = require('./router/teacher/register_teacher_Router');
+;
 
 const app = express();
 
@@ -10,9 +12,10 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
 // admin
-app.use(register_Admin_Router)
+app.use(register_Admin_Router);
 
-
+// teacher
+app.use(register_teacher_Router);
 
 const PORT = 7878;
 
