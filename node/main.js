@@ -5,10 +5,12 @@ const { connectDB } = require('./config/db');
 const { register_Admin_Router } = require('./router/admin/register_Admin_Router');
 const { register_teacher_Router } = require('./router/teacher/register_teacher_Router');
 const { login_Router } = require('./router/login_Router');
-;
+const cors = require('cors');
 
 const app = express();
 
+
+app.use(cors({origin:"http://localhost:5173",credentials:true}))
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
