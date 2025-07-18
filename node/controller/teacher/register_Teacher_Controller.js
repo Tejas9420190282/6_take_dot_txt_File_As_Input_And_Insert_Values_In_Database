@@ -43,7 +43,8 @@ const register_teacher_Controller = async (req, res) => {
         res.status(200).json({
             success : true,
             message : `new Teacher created...`,
-            newAdmin : newTeacher
+            newAdmin : newTeacher,
+            redirect : "/login",
         })
 
 

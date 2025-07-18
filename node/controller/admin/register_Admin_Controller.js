@@ -44,7 +44,8 @@ const register_Admin_Controller = async (req, res) => {
         res.status(200).json({
             success : true,
             message : `admin created...`,
-            newAdmin : newAdmin
+            newAdmin : newAdmin,
+            redirect : "/login",
         })
 
     } catch (error) {
