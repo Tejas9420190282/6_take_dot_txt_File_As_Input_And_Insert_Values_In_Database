@@ -6,11 +6,12 @@ import Login from "./component/Login";
 import Teacher_Home from "./component/teacher/Teacher_Home";
 import Admin_Home from "./component/admin/Admin_Home";
 
+
 function App() {
-    const router = createBrowserRouter([
+     const router = createBrowserRouter([
         {
             path: "/",
-            element: <Login />,
+            element: <Login />
         },
         {
             path: "/admin/home",
@@ -28,7 +29,8 @@ function App() {
 
     return (
         <>
-            <RouterProvider router={router} />
+            <RouterProvider router={router} /> 
+
         </>
     );
 }
