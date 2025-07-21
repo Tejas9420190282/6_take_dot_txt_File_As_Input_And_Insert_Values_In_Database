@@ -5,6 +5,7 @@ import "./App.css";
 import Login from "./component/Login";
 import Teacher_Home from "./component/teacher/Teacher_Home";
 import Admin_Home from "./component/admin/Admin_Home";
+import Admin_Add_Teacher from "./component/admin/Admin_Add_Teacher";
 
 
 function App() {
@@ -21,6 +22,15 @@ function App() {
                 </>
             ),
         },
+        {
+            path: "/admin/add-teacher",
+            element: (
+                <>
+                    <Admin_Add_Teacher />
+                </>
+            ),
+        },
+
         {
             path: "/teacher/home",
             element: <Teacher_Home />,
