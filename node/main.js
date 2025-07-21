@@ -7,6 +7,7 @@ const { register_teacher_Router } = require('./router/teacher/register_teacher_R
 const { login_Router } = require('./router/login_Router');
 const cors = require('cors');
 const { show_All_Teacher_Router } = require('./router/admin/show_All_Teacher_Router');
+const { register_Student_Router } = require('./router/teacher/register_Student_Router');
 
 const app = express();
 
@@ -23,6 +24,7 @@ app.use(show_All_Teacher_Router);
 
 // teacher
 app.use(register_teacher_Router);
+app.use(register_Student_Router);
 
 const PORT = 7878;
 
