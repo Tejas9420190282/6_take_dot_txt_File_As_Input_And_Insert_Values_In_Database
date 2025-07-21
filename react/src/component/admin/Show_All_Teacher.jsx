@@ -3,6 +3,7 @@
 
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
+import Admin_Navbar from './Admin_Navbar';
 
 function Show_All_Teacher() {
 
@@ -36,14 +37,14 @@ function Show_All_Teacher() {
 
     return (
         <>
-            <ul>
+            <Admin_Navbar />
+            <ul className='mt-12'>
                 {teacher.map((t,index) => (
-                    <ul>
+                    <ul className='flex gap-10 text-center mt-3'>
+                        <li>{index})</li>
                         <li><strong>Name : </strong>{t.Name}</li>
 
                         <li><strong>Email : </strong>{t.Email}</li>
-
-                        <p className='m-4'>----------</p>
                     </ul>
                 ))}
             </ul>
