@@ -8,6 +8,7 @@ import Admin_Home from "./component/admin/Admin_Home";
 import Admin_Add_Teacher from "./component/admin/Admin_Add_Teacher";
 import Show_All_Teacher from "./component/admin/Show_All_Teacher";
 import Show_All_Student from "./component/admin/Show_All_Student";
+import Teacher_Register_Student from "./component/teacher/Teacher_Register_Student";
 
 
 function App() {
@@ -52,6 +53,10 @@ function App() {
         {
             path: "/teacher/home",
             element: <Teacher_Home />,
+        },  
+        {
+            path: "/teacher/register-student",
+            element: <Teacher_Register_Student />,
         },
     ]);
 
