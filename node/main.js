@@ -6,6 +6,7 @@ const { register_Admin_Router } = require('./router/admin/register_Admin_Router'
 const { register_teacher_Router } = require('./router/teacher/register_teacher_Router');
 const { login_Router } = require('./router/login_Router');
 const cors = require('cors');
+const { show_All_Teacher_Router } = require('./router/admin/show_All_Teacher_Router');
 
 const app = express();
 
@@ -18,6 +19,7 @@ app.use(login_Router);
 
 // admin
 app.use(register_Admin_Router);
+app.use(show_All_Teacher_Router);
 
 // teacher
 app.use(register_teacher_Router);
