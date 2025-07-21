@@ -17,10 +17,13 @@ function Admin_Navbar() {
                         <Link to="/admin/add-teacher" className="hover:text-yellow-300">Add Teacher</Link>
                     </li>
                     <li>
-                        <Link to="/admin/show-all-teachers" className="hover:text-yellow-300">All Teachers</Link>
+                        <Link to="/admin/show-all-teachers" className="hover:text-yellow-300">show All Teachers</Link>
                     </li>
                     <li>
-                        <Link to="/admin/show-all-students" className="hover:text-yellow-300">All Students</Link>
+                        <Link to="/admin/show-all-students" className="hover:text-yellow-300">show All Students</Link>
+                    </li>
+                    <li>
+                        <Link to="/" className="hover:text-yellow-300">Logout</Link>
                     </li>
                 </ul>
             </div>
