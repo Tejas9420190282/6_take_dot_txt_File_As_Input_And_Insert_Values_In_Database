@@ -6,6 +6,7 @@ import Login from "./component/Login";
 import Teacher_Home from "./component/teacher/Teacher_Home";
 import Admin_Home from "./component/admin/Admin_Home";
 import Admin_Add_Teacher from "./component/admin/Admin_Add_Teacher";
+import Show_All_Teacher from "./component/admin/Show_All_Teacher";
 
 
 function App() {
@@ -27,6 +28,14 @@ function App() {
             element: (
                 <>
                     <Admin_Add_Teacher />
+                </>
+            ),
+        },
+        {
+            path: "/admin/show-all-teachers",
+            element: (
+                <>
+                    <Show_All_Teacher />
                 </>
             ),
         },
