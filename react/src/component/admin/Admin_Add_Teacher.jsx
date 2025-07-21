@@ -28,13 +28,10 @@ function Admin_Add_Teacher() {
             
             setMsg(responce.data.message);
         }
-
-        if (responce.data.success) {
             
-            if (responce.data.message) {
+        if (responce.data.message) {
                 
-                setMsg(responce.data.message);
-            }
+            setMsg(responce.data.message);
         }
     };
     
