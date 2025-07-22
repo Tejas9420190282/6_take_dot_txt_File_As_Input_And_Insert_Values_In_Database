@@ -37,7 +37,7 @@ function Teacher_Register_Student() {
     return (
         <>
             <Teacher_Navbar />
-            <div className="max-w-md mx-auto mt-10 p-6 mt-10 bg-white rounded-2xl shadow-lg">
+            <div className="max-w-md mx-auto p-6 mt-10 bg-white rounded-2xl shadow-lg">
                 <h2 className="text-2xl font-bold text-center mb-6">
                     Register Student
                 </h2>

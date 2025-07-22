@@ -1,5 +1,7 @@
-const { default: mongoose } = require("mongoose");
 
+// student_Scema.js
+
+const { default: mongoose } = require("mongoose");
 
 const student_Scema = mongoose.Schema({
     name : {

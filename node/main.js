@@ -9,6 +9,8 @@ const cors = require('cors');
 const { show_All_Teacher_Router } = require('./router/admin/show_All_Teacher_Router');
 const { register_Student_Router } = require('./router/teacher/register_Student_Router');
 const { show_All_Student_Router } = require('./router/teacher/show_All_Student_Router');
+const { Student_Input_txt_File_Router } = require('./router/teacher/Student_Input_txt_File_Router');
+
 
 const app = express();
 
@@ -27,6 +29,7 @@ app.use(show_All_Student_Router);
 // teacher
 app.use(register_teacher_Router);
 app.use(register_Student_Router);
+app.use(Student_Input_txt_File_Router);
 
 const PORT = 7878;
 
