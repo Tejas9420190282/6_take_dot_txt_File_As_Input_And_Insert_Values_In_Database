@@ -40,13 +40,17 @@ function Show_All_Student() {
                 <ul> 
                     { 
                         students.map((s, index)=> (
-                            <li><strong>Name : </strong>{s.name}
-                            <p><strong>Email : </strong>{s.email}</p>
-                            <p><strong>Class : </strong>{s.std}</p></li>
+                            <li>
+                                <strong>Name : </strong>{s.name}
+                                <p><strong>Email : </strong>{s.email}</p>
+                                <p><strong>Class : </strong>{s.std}</p>
+
+                                <p className='m-5'>---------------</p>
+                            </li>
                         ) ) 
                     }
 
-                    <p className='m-5'>---------------</p>
+                    
                 </ul>
             </div>
         </>
